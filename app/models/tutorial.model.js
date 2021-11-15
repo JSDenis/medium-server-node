@@ -2,7 +2,7 @@ module.exports = mongoose => {
   var schema = mongoose.Schema(
     {
       title: String,
-      description: String,
+      descr: String,
       author: String
      /*  published: Boolean */
     },
@@ -15,6 +15,6 @@ module.exports = mongoose => {
     return object;
   });
 
-  const Tutorial = mongoose.model("tutorial", schema);
+  const Tutorial = mongoose.model("news", schema);
   return Tutorial;
 };
